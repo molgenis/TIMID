@@ -11,4 +11,4 @@ Refreshing the data contains several steps:
 - Download the preprocessing_raw_data.sh file;
 - Change in this file the timid_dir and new_dir (name of the folder in which the new files are);
 - Run preprocessing_raw_data.sh:
-  - 
+  - abcd
