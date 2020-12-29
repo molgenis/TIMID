@@ -1,5 +1,5 @@
 # TIMID
-TIMID model and scripts to process new TIMID data.
+TIMID model (EMX) and scripts to process new TIMID data.
 
 # Getting Started
 This repository should make it possible to refresh the data on timid.gcc.rug.nl. 
