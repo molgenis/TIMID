@@ -9,6 +9,10 @@ Refreshing the data contains several steps:
 
 ## Step 1: Preprocessing the raw data files
 - Download the preprocessing_raw_data.sh file;
-- Change in this file the timid_dir and new_dir (name of the folder in which the new files are);
+- Change in this file the variables:
+   - timid_dir;
+   - new_dir (name of the folder in which the new files are);
+   - server (check if it's the right one);
+   - In case the TIMID model is on a new server / has been reuploaded, the attribute ID of mgs_species in TIMID_mgs_species_data has changed and this should be adjusted (line 106)
 - Run preprocessing_raw_data.sh:
   - abcd
