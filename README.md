@@ -13,6 +13,6 @@ Refreshing the data contains several steps:
    - timid_dir;
    - new_dir (name of the folder in which the new files are);
    - server (check if it's the right one);
-   - In case the TIMID model is on a new server / has been reuploaded, the attribute ID of mgs_species in TIMID_mgs_species_data has changed and this should be adjusted (line 106)
+   - In case the TIMID model is on a new server / has been reuploaded, the attribute ID of mgs_species in TIMID_mgs_species_data has changed and this should be adjusted (line 106). The right ID can be found on the server in entity=sys_md_Attribute.
 - Run preprocessing_raw_data.sh:
   - abcd
