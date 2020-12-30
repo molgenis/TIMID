@@ -58,8 +58,3 @@
 "TIMID_species_oxygen_cultured_counts"	"n_cultures"	"n_cultures"	"int"	""	"false"	"false"					"true"	"true"	"false"	"false"	"true"	"false"	""			""	"Cultured frequency"	""																
 "TIMID_species_oxygen_cultured_counts"	"n_anaeroob"	"n_anaeroob"	"int"	""	"true"	"false"					"false"	"false"	"false"	"false"	"true"	"false"	""			""	"Number of cultures anearoob per sample and mgs_species"	""																
 "TIMID_species_oxygen_cultured_counts"	"n_aeroob"	"n_aeroob"	"int"	""	"true"	"false"					"false"	"false"	"false"	"false"	"true"	"false"	""			""	"Number of cultures aeroob per sample and mgs_species"	""																
-"sys_FileMeta"	"id"	"Id"	"string"	""	"false"	"AUTO"					"false"	"false"	"true"	"false"	"false"	"true"	""			""		""																
-"sys_FileMeta"	"filename"	"Filename"	"string"	""	"false"	"false"					"true"	"true"	"false"	"false"	"true"	"false"	""			""		""																
-"sys_FileMeta"	"contentType"	"Content-type"	"string"	""	"true"	"false"					"true"	"false"	"false"	"false"	"true"	"false"	""			""		""																
-"sys_FileMeta"	"size"	"Size"	"long"	""	"true"	"false"					"false"	"false"	"false"	"false"	"true"	"false"	""			""	"File size in bytes"	""																
-"sys_FileMeta"	"url"	"URL"	"hyperlink"	""	"false"	"false"					"false"	"false"	"false"	"false"	"true"	"true"	""			""	"File download URL"	""																
