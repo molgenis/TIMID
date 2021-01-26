@@ -20,3 +20,5 @@ Refreshing the data contains several steps:
   3.) In the third step the new (raw) data is uploaded, including the new MGS plots (files);
   
 ## Step2: Combining the raw data files
+Combining the Metagenomics and cultured data is done by the script processData.py:
+
