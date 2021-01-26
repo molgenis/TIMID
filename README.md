@@ -15,10 +15,16 @@ Refreshing the data contains several steps:
    - new_dir (name of the folder in which the new files are);
    - In case the TIMID model is on a new server / has been reuploaded, the attribute ID of mgs_species in TIMID_mgs_species_data has changed and this should be adjusted (line 110). The right ID can be found on the server in entity=sys_md_Attribute, look for attribute mgs_species.
 - Run preprocessing_raw_data.sh:
-  1.) First the new files are adjusted (renaming and adding of headers);
-  2.) Secondly the raw and processed data that is in Molgenis is deleted. This includes the MGS plots (files). These files are deleted with the Python script: delete_mgs_plots.py, make sure this is in the same folder as the preprocessing_raw_data.sh;
-  3.) In the third step the new (raw) data is uploaded, including the new MGS plots (files);
+  - First the new files are adjusted (renaming and adding of headers);
+  - Secondly the raw and processed data that is in Molgenis is deleted. This includes the MGS plots (files). These files are deleted with the Python script: delete_mgs_plots.py, make sure this is in the same folder as the preprocessing_raw_data.sh;
+  - In the third step the new (raw) data is uploaded, including the new MGS plots (files);
   
 ## Step2: Combining the raw data files
-Combining the Metagenomics and cultured data is done by the script processData.py:
+By running the script processData.py the raw Metagenomics and cultured data is combined. This script combines the information from TIMID_mgs_species_data and TIMID_cultured_species and links the MGS plots to the samples in TIMID_sample_info.
+Please following the logging on the screen / or check you log file (if created) because when the script has nearly finished you have to upload the file with the TIMID_sample_info manually first check if the right host is selected, then upload the data (run in the same folder as where the file is):
+```
+mcmd config set host
+mcmd import -p -a add TIMID_sample_info.csv
+```
+ 
 
