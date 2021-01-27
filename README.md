@@ -2,7 +2,7 @@
 TIMID model (EMX) and scripts to process new TIMID data. New data is send by someone of TIMID (at the moment Jelle Slager).
 
 ## Getting Started
-This repository should make it possible to refresh the data on [timid.gcc.rug.nl](https://timid.gcc.rug.nl). 
+This repository should make it possible to refresh the data on the [TIMID](https://timid.molgeniscloud.org) server. 
 Refreshing the data contains several steps:
 - Step 1: Preprocessing the raw data files (upload them to Molgenis) by using the script preprocess_raw_data.sh;
 - Step 2: Combining the raw data in Molgenis with the Python script: ProcessData.py. This script also needs to be run locally as a file is created which should be uploaded manually. 
