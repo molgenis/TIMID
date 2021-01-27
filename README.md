@@ -13,7 +13,7 @@ Refreshing the data contains several steps:
    - server (check if it's the right one);
    - timid_dir;
    - new_dir (name of the folder in which the new files are);
-   - In case the TIMID model is on a new server / has been reuploaded, the attribute ID of mgs_species in TIMID_mgs_species_data has changed and this should be adjusted (line 110 in the script). The right ID can be found on the [server](https://timid.molgeniscloud.org/menu/main/dataexplorer?entity=sys_md_Attribute&hideselect=true&mod=data&filter=entity==TIMID_mgs_species_data;name=q=mgs_species), look for attribute mgs_species.
+   - In case the TIMID model is on a new server / has been reuploaded, the attribute ID of mgs_species in TIMID_mgs_species_data has changed and this should be adjusted (line 110 in the script). The right ID can be found on the [server](https://molgenis16.gcc.rug.nl/menu/main/dataexplorer?entity=sys_md_Attribute&hideselect=true&mod=data&filter=entity==TIMID_mgs_species_data;name=q=mgs_species), look for attribute mgs_species.
 - Run preprocessing_raw_data.sh:
   - First the new files are adjusted (renaming and adding of headers);
   - Secondly the raw and processed data that is in Molgenis is deleted. This includes the MGS plots (files). These files are deleted with the Python script: delete_mgs_plots.py, make sure this is in the same folder as the preprocessing_raw_data.sh;
