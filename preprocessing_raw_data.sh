@@ -18,7 +18,7 @@ check_process()
 server=https://molgenis16.gcc.rug.nl
 #server=http://localhost
 
-timid_dir=/Users/dieuwke.roelofs-prins/Documents/Projects/TIMID
+timid_dir=/Users/XXXX/Documents/Projects/TIMID
 input_dir=$timid_dir/input
 new_dir=mgs_and_cmx_201127
 mgs_dir=$timid_dir/$new_dir
