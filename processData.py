@@ -648,7 +648,7 @@ delete=timid_session.delete('TIMID_sample_info')
 # Write sample info to file as it seems not to be possible to upload the data
 # including the sys_FileMeta ID for mgs_plots
 
-sample_info_file=open('/Users/dieuwke.roelofs-prins/Documents/Projects/TIMID/TIMID_sample_info.csv', 'w')
+sample_info_file=open('TIMID_sample_info.csv', 'w')
 
 header=[]
 
