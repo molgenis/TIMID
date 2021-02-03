@@ -107,7 +107,7 @@ mcmd import -p -a add TIMID_sample_info.tsv
 check_process $? 3d
 # Before importing the mgs_specie_data first adjust the model as there
 # is not yet data available in TIMID_mgs_culturable_species
-# echo With password for admin is meant password for Molgenis16
+# echo With password for admin is meant password for the TIMID server
 curl -u "admin:"$password"" -X PATCH $server/api/metadata/TIMID_mgs_species_data/attributes/aaaac5x7v3qad6qwh3hsujiabe -H "Content-Type: application/json" -H "accept: */*" -d "{"type":"string"}"
 check_process $? 3e
 mcmd import -p -a add TIMID_mgs_species_data.tsv
