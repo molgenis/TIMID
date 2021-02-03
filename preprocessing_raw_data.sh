@@ -96,20 +96,21 @@ check_process $? 2j
 echo ""
 echo "Upload the available data"
 # Step 3 Upload the available data
-mcmd import TIMID_culturable_species
+cd input
+mcmd import -p -a add TIMID_culturable_species.tsv
 check_process $? 3a
-mcmd import TIMID_cult2mgs_names
+mcmd import -p -a add TIMID_cult2mgs_names.tsv
 check_process $? 3b
-mcmd import TIMID_cultured_species
+mcmd import -p -a add TIMID_cultured_species.tsv
 check_process $? 3c
-mcmd import TIMID_sample_info
+mcmd import -p -a add TIMID_sample_info.tsv
 check_process $? 3d
 # Before importing the mgs_specie_data first adjust the model as there
 # is not yet data available in TIMID_mgs_culturable_species
 # echo With password for admin is meant password for Molgenis16
 curl -u "admin:"$password"" -X PATCH $server/api/metadata/TIMID_mgs_species_data/attributes/aaaac5x7v3qad6qwh3hsujiabe -H "Content-Type: application/json" -H "accept: */*" -d "{"type":"string"}"
 check_process $? 3e
-mcmd import TIMID_mgs_species_data
+mcmd import -p -a add TIMID_mgs_species_data.tsv
 check_process $? 3f
 
 ## Step 3g Upload the mgs plots
